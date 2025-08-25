@@ -3,6 +3,8 @@ services:
   api:
     container_name: evolution_api
     image: evoapicloud/evolution-api:latest
+    extra_hosts:
+      - "mmg.whatsapp.net:57.144.179.32"
     restart: always
     depends_on:
       - redis
