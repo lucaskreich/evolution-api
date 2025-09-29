@@ -1,6 +1,8 @@
 services:
   api:
     container_name: evolution_api
+    extra_hosts:
+      - "mmg.whatsapp.net:57.144.179.32"
     image: evolution/api:local
     build: .
     restart: always
